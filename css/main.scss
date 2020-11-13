@@ -1,0 +1,31 @@
+html {
+	--bg: #ffffff;
+	--text: #2d3748;
+	--text_light: #718096;
+}
+
+html[data-theme='dark'] {
+	--bg: #1A1E22;
+	--text: #ffffff;
+	--text_light: #e0e0e0;
+}
+
+.bg-primary {
+	background-color: var(--bg);
+}
+
+.text-primary {
+	color: var(--text);
+}
+
+.text-secondary {
+	color: var(--text_light);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 200ms !important;
+  transition-delay: 0 !important;
+}
